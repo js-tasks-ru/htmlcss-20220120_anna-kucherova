@@ -2,9 +2,11 @@ body {
     font-family: Verdana, sans-serif;
     font-size: 18px;
     color: #fff;
+    margin: 0;
+
 }
 
-h1 , h2 , p , ul {
+h1 , h2 , p , ul , ol {
     margin: 0;
 }
 
