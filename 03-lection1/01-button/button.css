@@ -9,11 +9,11 @@
     cursor: pointer;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
 }
-.button-primary {
+.button__primary {
     background-color: #4263EB;
 }
 
-.button-primary:hover {
+.button__primary:hover {
     background-color: #2342C0;
 }
 
@@ -22,21 +22,21 @@
     pointer-events: none;
 }
 
-.button-secondary {
+.button__secondary {
     background-color: var(--secondary);
 }
 
-.button-secondary:hover {
+.button__secondary:hover {
     background-color: #5028C6;
 }
 
-.button-alternate {
+.button__alternate {
     border: 1px solid var(--grey-3);
     color: var(--grey-4);
     background-color: #ffffff;
 }
 
-.button-alternate:hover {
+.button__alternate:hover {
     border: 1px solid var(--black);
 }
 
@@ -46,15 +46,15 @@
     justify-content: center;
 }
 
-.wrapper-row {
+.wrapper__row {
     margin: 10px;
 }
 
-.row-button {
+.row__button {
     margin-top: 10px;
 }
 
-.primary-row, .secondary-row, .alternate-row {
+.wrapper__column {
     display: flex;
     flex-direction: column;
 }
