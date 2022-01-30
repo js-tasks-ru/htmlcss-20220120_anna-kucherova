@@ -2,17 +2,41 @@
 <!-- Страница с аккордеоном -->
 <html lang="ru">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./accordion.css">
     </head>
     <body>
-        <details>
-            <summary>
-                Accordion item
+    <div>
+        <details class='accordion__item'>
+            <summary class='accordion__summary'>
+                John Lennon
             </summary>
-            <p>
-                Hidden content
+            <p class='accordion__text'>
+                "The more I see, the less I know for sure." <br>
+                "You may say I'm a dreamer, but I'm not the only one. I hope someday you'll join us. And the world will live as one."
             </p>
         </details>
+        <details class='accordion__item'>
+            <summary class='accordion__summary'>
+                Kurt Cobain
+            </summary>
+            <p class='accordion__text'>
+                "It's better to burn out than fade away."
+            </p>
+        </details>
+        <details class='accordion__item'>
+            <summary class='accordion__summary'>
+                Freddie Mercury
+            </summary>
+            <p class='accordion__text'>
+                "I always knew I was a star. And now, the rest of the world seems to agree with me." <br>
+                "You can be anything you want to be, just turn yourself into anything you think that you could ever be."
+            </p>
+        </details>
+    </div>
+
     </body>
 </html>
