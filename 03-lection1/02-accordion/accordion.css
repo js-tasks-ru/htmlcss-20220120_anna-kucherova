@@ -1,7 +1,6 @@
 /* Стилизация аккордеона */
 
 .accordion__item {
-    width: 730px;
     padding: 24px 48px 24px 32px;
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
@@ -30,7 +29,7 @@
     cursor: pointer;
 }
 
-.accordion__summary ::-webkit-details-marker {
+.accordion__summary::-webkit-details-marker {
     display: none;
 }
 
