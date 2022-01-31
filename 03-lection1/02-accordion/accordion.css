@@ -1,7 +1,5 @@
 /* Стилизация аккордеона */
-* {
-    font-family: 'Inter', sans-serif;
-}
+
 .accordion__item {
     padding: 24px 48px 24px 32px;
     border: 1px solid var(--grey-3);
