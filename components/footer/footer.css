@@ -1,4 +1,4 @@
 .footer {
-    height: 400px;
+    min-height: 200px;
     background-color: var(--white);
 }

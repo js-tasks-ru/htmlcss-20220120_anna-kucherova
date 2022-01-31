@@ -1,0 +1,5 @@
+.content-section {
+    flex-grow: 1;
+    /*min-height: 500px;*/
+    background-color: var(--grey-5);
+}

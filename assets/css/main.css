@@ -2,6 +2,7 @@
 @import '../fonts/fonts.css';
 @import "/components/container/container.css";
 @import "/components/header/header.css";
+@import "/components/main/content-section.css";
 @import "/components/footer/footer.css";
 
 
@@ -36,11 +37,8 @@ html, body {
     height: 100%;
 }
 
-main {
-    min-height: 500px;
-    background-color: var(--grey-5);
-}
 
 .page {
-
+    display: flex;
+    flex-direction: column;
 }
