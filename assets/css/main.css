@@ -28,7 +28,7 @@
     --secondary: var(--purple-1);
 }
 
-* {
+body {
     font-family: 'Roboto', sans-serif;
 }
 
