@@ -14,15 +14,19 @@
 }
 
 .header__avatar {
+    flex: 0 0 auto;
     width: 64px;
     height: 64px;
     border-radius: 50%;
     background: var(--grey-2);
 }
 
+.header__lines {
+    flex: 1 1 auto;
+}
+
 .skeleton__lines {
     height: 20px;
-    max-width: 515px;
     margin-bottom: 8px;
     background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
 }
@@ -32,10 +36,10 @@
 }
 
 .skeleton__lines_s {
-    width: 172px;
+    width: 33.333%;
 }
 
 .skeleton__lines_m {
-    width: 257px;
+    width: 50%;
 }
 
