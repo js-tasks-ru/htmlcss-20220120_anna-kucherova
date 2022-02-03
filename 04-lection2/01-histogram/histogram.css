@@ -52,6 +52,6 @@
 }
 
 .histogram__box {
-    flex: 1 1 auto;
+    flex-basis: 20px;
     background: var(--blue-2);
 }
