@@ -1,11 +1,8 @@
-body {
-    text-align: center;
-    font-family: Inter, sans-serif;
-}
 .tooltip {
     display: inline-flex;
     position: relative;
-    padding-top: 20px;
+    cursor: pointer;
+    font-family: Inter, sans-serif;
 }
 
 .tooltip:hover > .tooltip__bubble {
@@ -13,14 +10,13 @@ body {
 }
 
 .tooltip__icon {
-    margin-top: 45px;
     width: 24px;
     height: 24px;
-    cursor: pointer;
 }
 
 .tooltip__bubble {
     position: absolute;
+    bottom: calc(100% + 8px);
     right: 50%;
     transform: translateX(50%);
     padding: 13px 21px 8px 21px;
