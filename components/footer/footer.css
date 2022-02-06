@@ -1,4 +1,20 @@
 .footer {
+    padding: 71px 400px 136px;
     min-height: 200px;
     background-color: var(--white);
+    text-align: center;
+}
+
+.footer__title {
+    padding-bottom: 32px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 48px;
+    color: var(--black);
+}
+
+.footer__text {
+
 }
