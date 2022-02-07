@@ -1,5 +1,5 @@
 .footer {
-    padding: 71px 400px 136px;
+    padding: 71px 0 136px;
     min-height: 200px;
     background-color: var(--white);
     text-align: center;
@@ -16,5 +16,5 @@
 }
 
 .footer__text {
-
+    padding: 0 218px 0 252px;
 }
