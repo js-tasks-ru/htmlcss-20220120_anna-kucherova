@@ -1,0 +1,31 @@
+.sidebar__title {
+    margin: 0 0 16px 0;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--black-1);
+}
+
+.sidebar__menu {
+    width: 230px;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar__menu-item {
+    list-style: none;
+    padding-bottom: 4px;
+}
+
+.sidebar__menu-item:last-child {
+    padding-top: 30px ;
+    padding-bottom: 0;
+}
+
+.sidebar__link {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+}

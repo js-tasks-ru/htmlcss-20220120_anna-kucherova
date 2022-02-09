@@ -1,5 +1,4 @@
-
-.inner-page {
+.template__inner {
     padding-top: 36px;
 
     font-family: Inter, sans-serif;
@@ -8,46 +7,14 @@
     column-gap: 56px;
 }
 
-.sidebar__title {
-    margin: 0 0 16px 0;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 26px;
-    color: var(--black-1);
-}
-
-.sidebar__menu {
-    width: 230px;
-    padding: 0;
-    margin: 0;
-}
-
-.sidebar__menu__item {
-    list-style: none;
-    padding-bottom: 4px;
-}
-
-.sidebar__menu__item:last-child {
-    padding-top: 30px ;
-    padding-bottom: 0;
-}
-
-.item__link {
-    text-decoration: none;
-    color: var(--black);
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 22px;
-}
-
-.inner-page__content {
+.template__inner-content {
     padding: 32px 48px;
     background: var(--white);
     box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
 }
 
-.inner-page__title {
+.template__inner-title {
     margin: 0;
     font-weight: normal;
     font-size: 28px;
@@ -64,7 +31,7 @@
     height: 166px;
 }
 
-.template__footer__text {
+.template__footer-text {
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
