@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Modal</title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body class='page'>
+<header class='header template__header'>
+  <div class='container'>
+  </div>
+</header>
+<main class='content-section'>
+  <div class='container'>
+    <div class='template__inner'>
+      <div class='sidebar'>
+        <h4 class='sidebar__title'>Components</h4>
+        <nav>
+          <ul class='sidebar__menu'>
+            <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Modal</a></li>
+            <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Tooltip</a></li>
+            <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Avatar</a></li>
+            <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Calendar</a></li>
+            <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Histogram</a></li>
+            <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Custom form elements</a></li>
+            <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Main page</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class='template__inner-content'>
+        <h3 class='template__inner-title'>Modal</h3>
+        <button class='button button_primary' id='modal-open'>Open modal</button>
+        <div id='modal' class='modal'>
+          <div class='modal__content'>
+            <div class='modal__window'>
+              <button id='modal-close' class='modal__exit'><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4714 3.52861C12.7318 3.78896 12.7318 4.21107 12.4714 4.47141L4.47141 12.4714C4.21107 12.7318 3.78896 12.7318 3.52861 12.4714C3.26826 12.2111 3.26826 11.789 3.52861 11.5286L11.5286 3.52861C11.789 3.26826 12.2111 3.26826 12.4714 3.52861Z" fill="#495057"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.52861 3.52861C3.78896 3.26826 4.21107 3.26826 4.47141 3.52861L12.4714 11.5286C12.7318 11.789 12.7318 12.2111 12.4714 12.4714C12.2111 12.7318 11.789 12.7318 11.5286 12.4714L3.52861 4.47141C3.26826 4.21107 3.26826 3.78896 3.52861 3.52861Z" fill="#495057"/>
+              </svg>
+              </button>
+              <div class='modal__title'>Modal title</div>
+              <div class='modal__body'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class='footer template__footer'>
+  <div class='container'>
+    <div class='template__footer-text'>Reusable component library</div>
+  </div>
+</footer>
+<script src="/05-lection3/02-modal/index.js"></script>
+</body>
+</html>

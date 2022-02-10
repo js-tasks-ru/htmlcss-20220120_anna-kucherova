@@ -1,20 +1,45 @@
 <!DOCTYPE html>
-<!-- Страница с гистограммой -->
-<html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href='../../components/histogram.css'>
-    </head>
-    <body>
-    <div class='histogram'>
-        <div class='histogram__header'>
-                <div class='histogram__title'>Total orders</div>
-                <div>
-                    <a class='histogram__link' href='#'>View all</a>
-                </div>
-        </div>
-        <div class='histogram__count'>50254</div>
-        <div class='histogram__image'>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Title</title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <!--  <link rel='stylesheet' href='../components/template.css'>-->
+  <!--  <link rel="stylesheet" href="../components/sidebar/sidebar.css">-->
+</head>
+<body class='page'>
+<header class='header template__header'>
+  <div class='container'>
+  </div>
+</header>
+<main class='content-section'>
+  <div class='container'>
+    <div class='template__inner'>
+      <div class='sidebar'>
+        <h4 class='sidebar__title'>Components</h4>
+        <nav>
+          <ul class='sidebar__menu'>
+            <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Modal</a></li>
+            <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Tooltip</a></li>
+            <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Avatar</a></li>
+            <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Calendar</a></li>
+            <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Histogram</a></li>
+            <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Custom form elements</a></li>
+            <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Main page</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class='template__inner-content'>
+        <h3 class='template__inner-title'>Histogram</h3>
+        <div class='histogram'>
+          <div class='histogram__header'>
+            <div class='histogram__title'>Total orders</div>
+            <div>
+              <a class='histogram__link' href='#'>View all</a>
+            </div>
+          </div>
+          <div class='histogram__count'>50254</div>
+          <div class='histogram__image'>
             <div class='histogram__box' style='height: 50px'></div>
             <div class='histogram__box' style='height: 35px'></div>
             <div class='histogram__box' style='height: 22px'></div>
@@ -45,8 +70,16 @@
             <div class='histogram__box' style='height: 11px'></div>
             <div class='histogram__box' style='height: 35px'></div>
             <div class='histogram__box' style='height: 17px'></div>
+          </div>
         </div>
+      </div>
     </div>
-
-    </body>
+  </div>
+</main>
+<footer class='footer template__footer'>
+  <div class='container'>
+    <div class='template__footer-text'>Reusable component library</div>
+  </div>
+</footer>
+</body>
 </html>

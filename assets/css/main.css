@@ -6,6 +6,16 @@
 @import "/components/footer/footer.css";
 @import "/components/card/card.css";
 @import "/components/preview/preview.css";
+@import "/components/button.css";
+@import "/components/sidebar/sidebar.css";
+@import "/components/template.css";
+@import "/components/accordion.css";
+@import "/components/histogram.css";
+@import "/components/skeleton.css";
+@import "/components/tooltip.css";
+@import "/components/modal.css";
+@import "/components/calendar.css";
+
 
 
 :root {
