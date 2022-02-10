@@ -17,3 +17,15 @@
 .footer__text {
     padding: 0 218px 0 252px;
 }
+
+@media (min-width: 375px) and (max-width: 990px) {
+    .footer {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer {
+        display: block;
+    }
+}

@@ -1,6 +1,5 @@
 .template__inner {
     padding-top: 36px;
-
     font-family: Inter, sans-serif;
     display: grid;
     grid-template-columns: auto 1fr;
@@ -15,7 +14,7 @@
 }
 
 .template__inner-title {
-    margin: 0;
+    margin: 0 0 24px 0;
     font-weight: normal;
     font-size: 28px;
     line-height: 38px;
@@ -43,4 +42,32 @@
 .template__header {
     padding: 0;
     height: 82px;
+}
+
+@media (min-width: 375px) and (max-width: 990px) {
+    .content-section {
+        background-color: var(--white);
+    }
+
+    .template__header {
+        background-color: var(--grey-5);
+    }
+
+    .template__inner {
+        display: block;
+    }
+
+    .template__inner-content {
+        border: none;
+        box-shadow: var(--white);
+    }
+
+    .template__inner-title {
+        font-size: 20px;
+    }
+
+    .template__footer {
+        display: none;
+    }
+
 }
