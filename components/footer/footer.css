@@ -23,9 +23,3 @@
         display: none;
     }
 }
-
-@media (min-width: 992px) {
-    .footer {
-        display: block;
-    }
-}
