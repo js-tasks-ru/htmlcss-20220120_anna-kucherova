@@ -25,3 +25,19 @@
     text-align: center;
     color: var(--black);
 }
+
+
+
+@media (max-width: 991px) {
+    .header__title {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .card {
+        flex-basis: 450px;
+    }
+    .card__title {
+        font-size: 16px;
+    }
+}
+

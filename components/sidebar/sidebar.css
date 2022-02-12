@@ -32,3 +32,9 @@
     font-size: 14px;
     line-height: 22px;
 }
+
+@media (max-width: 991px) {
+    .sidebar {
+        display: none;
+    }
+}
