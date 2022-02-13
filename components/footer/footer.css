@@ -17,3 +17,9 @@
 .footer__text {
     padding: 0 218px 0 252px;
 }
+
+@media (max-width: 991px) {
+    .footer {
+        display: none;
+    }
+}
