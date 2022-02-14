@@ -5,10 +5,11 @@
 
 .checkbox__input {
     position: absolute;
-    width: 0;
-    height: 0;
-    outline: none;
-    visibility: hidden;
+    left: -9999px;
+    /*width: 0;*/
+    /*height: 0;*/
+    /*outline: none;*/
+    /*visibility: hidden;*/
 }
 
 .checkbox__state {
@@ -62,5 +63,10 @@
 .checkbox__disabled {
     background: var(--grey-2);
     border-radius: 4px;
-    cursor: auto;
+    cursor: not-allowed;
+}
+
+.legend__disabled {
+    color: var(--grey-2);
+    cursor: not-allowed;
 }
