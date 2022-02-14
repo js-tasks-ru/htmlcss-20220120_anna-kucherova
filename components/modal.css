@@ -47,8 +47,6 @@
 
 .modal__exit {
     padding: 0;
-    width: 16px;
-    height: 16px;
     border: none;
     background: none;
     position: absolute;
@@ -59,4 +57,9 @@
 
 .modal__exit:hover {
     opacity: 0.5;
+}
+
+.modal__cross {
+    width: 24px;
+    height: 24px;
 }
