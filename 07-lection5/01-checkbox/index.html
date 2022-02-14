@@ -4,8 +4,41 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./checkbox.css">
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                padding: 50px;
+            }
+        </style>
     </head>
     <body>
+        <label class='checkbox'>
+            <input type='checkbox' class='checkbox__input' name='name'>
+            <div class='checkbox__state'>
+                <div class='checkbox__control'>
+                    <svg class='checkbox__icon'>
+                    <use href="/assets/images/sprite.svg#check">
+                    </use>
+                    </svg>
+                </div>
+                <div class='checkbox__legend'>Default</div>
+            </div>
+
+        </label>
+
+        <div class='checkbox'>
+            <div class='checkbox__state'>
+                <div class='checkbox__control checkbox__disabled'>
+                    <svg class='checkbox__icon'>
+                        <use href="/assets/images/sprite.svg#check">
+                        </use>
+                    </svg>
+                </div>
+                <div class='checkbox__legend'>Disabled</div>
+            </div>
+        </div>
 
     </body>
 </html>
