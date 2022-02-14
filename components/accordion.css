@@ -1,6 +1,7 @@
 /* Стилизация аккордеона */
 
 .accordion__item {
+    position: relative;
     padding: 24px 48px 24px 32px;
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
@@ -12,12 +13,16 @@
     border-radius: 8px;
     margin-bottom: 8px;
     max-height: 80px;
-    transition: all 0.4s ease-in-out;
     overflow: hidden;
 }
 
 .accordion__item[open] {
     max-height: 500px;
+    transition: all 500ms ease-in-out;
+}
+
+.accordion__item[open] .accordion__arrow {
+    transform: rotate(180deg);
 }
 
 .accordion__item:last-child {
@@ -36,4 +41,16 @@
 .accordion__text {
     padding-top: 16px;
     margin: 0;
+}
+
+.accordion__arrow {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 25px;
+    right: 25px;
+}
+
+.accordion__arrow_transition {
+    transition: all 500ms ease-in-out;
 }
