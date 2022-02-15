@@ -41,7 +41,7 @@
     color: var(--grey-4);
 }
 
-.legend_on {
+.toggler__legend_on {
     visibility: hidden;
     position: absolute;
     left: 65px;
@@ -60,19 +60,19 @@
     text-decoration: underline;
 }
 
-.toggler__input:checked ~ .toggler__state .legend_on {
+.toggler__input:checked ~ .toggler__state .toggler__legend_on {
     visibility: visible;
 }
 
-.toggler__input:checked ~ .toggler__state .legend_off {
+.toggler__input:checked ~ .toggler__state .toggler__legend_off {
     visibility: hidden;
 }
 
-.toggler_disabled {
-    cursor: not-allowed;
-    background-color: var(--grey-2);
-}
+/*.toggler_disabled {*/
+/*    cursor: not-allowed;*/
+/*    background-color: var(--grey-2);*/
+/*}*/
 
-.toggler__icon_disabled {
-    fill: var(--grey-3);
-}
+/*.toggler__icon_disabled {*/
+/*    fill: var(--grey-3);*/
+/*}*/
