@@ -10,6 +10,7 @@
     /*height: 0;*/
     /*outline: none;*/
     /*visibility: hidden;*/
+    /*clip: rect(0 0 0 0);*/
 }
 
 .checkbox__state {
@@ -60,13 +61,9 @@
     text-decoration: underline;
 }
 
-.checkbox__disabled {
+.checkbox_disabled {
     background: var(--grey-2);
     border-radius: 4px;
     cursor: not-allowed;
 }
 
-.legend__disabled {
-    color: var(--grey-2);
-    cursor: not-allowed;
-}
