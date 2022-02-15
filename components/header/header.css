@@ -1,5 +1,5 @@
 .header {
-    padding: 96px 0 77px;
+    padding: 25px 0 40px;
     background-color: var(--white);
 }
 
@@ -13,10 +13,17 @@
 
 }
 
+.header__logo {
+    margin-bottom: 40px;
+}
 
 @media (max-width: 991px) {
     .header__title {
         font-size: 28px;
         line-height: 38px;
+    }
+
+    .header__logo {
+        text-align: center;
     }
 }

@@ -40,17 +40,14 @@
 }
 
 .template__header {
-    padding: 0;
+    padding-bottom: 0;
+    background-color: var(--grey-5);
     height: 82px;
 }
 
 @media (max-width: 991px) {
     .content-section {
         background-color: var(--white);
-    }
-
-    .template__header {
-        background-color: var(--grey-5);
     }
 
     .template__inner {
