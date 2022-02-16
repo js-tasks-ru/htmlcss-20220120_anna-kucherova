@@ -1,0 +1,10 @@
+.form-elements {
+    display: flex;
+    gap: 40px;
+}
+
+.form-elements__checkbox, .form-elements__radio {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
