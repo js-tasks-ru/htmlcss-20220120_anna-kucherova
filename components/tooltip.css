@@ -5,6 +5,10 @@
     font-family: Inter, sans-serif;
 }
 
+.tooltip_small .tooltip__bubble {
+    display: block;
+}
+
 .tooltip:hover > .tooltip__bubble {
     display: block;
 }
@@ -38,8 +42,4 @@
     position: absolute;
     border: 8px solid transparent;
     border-top: 8px solid var(--blue-2);
-}
-
-.card__tooltip {
-
 }

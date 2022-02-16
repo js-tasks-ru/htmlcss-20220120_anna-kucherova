@@ -8,6 +8,10 @@
     border-radius: 8px;
 }
 
+.histogram_small {
+    width: 300px;
+}
+
 .histogram__header {
     display: flex;
     justify-content: space-between;
