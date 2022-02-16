@@ -1,6 +1,9 @@
 .input {
     display: flex;
     flex-direction: column;
+}
+
+.input__item {
     position: relative;
 }
 
@@ -43,8 +46,8 @@
 
 .input__form_success-icon {
     position: absolute;
-    top: 40px;
-    left: 305px;
+    top: 15px;
+    right: 15px;
     width: 24px;
     height: 24px;
     fill: var(--blue-1);
@@ -52,16 +55,17 @@
 
 .input__form_invalid-icon {
     position: absolute;
-    top: 40px;
-    left: 305px;
+    top: 15px;
+    right: 15px;
     width: 24px;
     height: 24px;
     fill: var(--error);
 }
 
-.input__form_invalid {
+.input_invalid .input__form {
     border-color: var(--error);
 }
+
 
 .input_invalid .input__form::placeholder {
     color: var(--grey-4)
