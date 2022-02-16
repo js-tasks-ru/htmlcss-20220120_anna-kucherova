@@ -4,8 +4,39 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./toggler.css">
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 50px;
+            }
+        </style>
     </head>
     <body>
+    <label class='toggler'>
+        <input class='toggler__input' type='checkbox' name='name'>
+        <div class='toggler__state'>
+            <div class='toggler__control'>
+                <svg class='toggler__icon' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" rx="12" fill=""/>
+                </svg>
+            </div>
+            <div class='toggler__legend toggler__legend_off'>Off</div>
+            <div class='toggler__legend toggler__legend_on'>On</div>
+        </div>
+    </label>
 
+    <label class='toggler'>
+        <input class='toggler__input' type='checkbox' name='name' disabled>
+        <div class='toggler__state'>
+            <div class='toggler__control'>
+                <svg class='toggler__icon' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="24" height="24" rx="12" fill=""/>
+                </svg>
+            </div>
+        <div class='toggler__legend'>Disabled</div>
+    </div>
+    </label>
     </body>
 </html>
