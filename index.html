@@ -22,11 +22,23 @@
             <h1 class='header__title'>
                 Reusable component library
             </h1>
+            <div class='tabs'>
+                <input id='#all-tab' type='radio'>
+                <input id='#elements-tab' type='radio'>
+                <input id='#containers-tab' type='radio' >
+                <input id='#templates-tab' type='radio'>
+                <div class='tabs__scroller'>
+                    <label class='tabs__title' for='#all-tab'>All components</label>
+                    <label class='tabs__title' for='#elements-tab'>Elements</label>
+                    <label class='tabs__title' for='#containers-tab'>Containers</label>
+                    <label class='tabs__title' for='#templates-tab'>Templates</label>
+                </div>
+            </div>
         </div>
     </header>
     <main class='content-section'>
         <div class='container'>
-            <div class='preview'>
+            <div class='preview all-tab'>
                 <div class='card'>
                     <div class='card__body'></div>
                     <div class='card__footer'>
@@ -70,7 +82,9 @@
                     </div>
                 </div>
             </div>
-
+            <div class='preview elements-tab'>
+                Elements tab
+            </div>
         </div>
     </main>
     <footer class='footer'>
