@@ -39,3 +39,7 @@
     border: 8px solid transparent;
     border-top: 8px solid var(--blue-2);
 }
+
+.card__tooltip {
+
+}

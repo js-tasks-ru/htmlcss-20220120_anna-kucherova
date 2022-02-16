@@ -52,6 +52,6 @@
 
 .radio_disabled {
     background: var(--grey-2);
-    border-radius: 4px;
+    border-radius: 14px;
     cursor: not-allowed;
 }

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body class='page'>
+<header class='header template__header'>
+  <div class='container'>
+  </div>
+</header>
+<main class='content-section'>
+  <div class='container'>
+    <div class='template__inner'>
+      <div class='sidebar'>
+        <h4 class='sidebar__title'>Components</h4>
+        <nav>
+          <ul class='sidebar__menu'>
+            <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Modal</a></li>
+            <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Tooltip</a></li>
+            <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Avatar</a></li>
+            <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Calendar</a></li>
+            <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Histogram</a></li>
+            <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Custom form elements</a></li>
+            <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Main page</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class='template__inner-content'>
+        <h3 class='template__inner-title'>Checkbox</h3>
+        <label class='checkbox'>
+          <input type='checkbox' class='checkbox__input' name='name'>
+          <div class='checkbox__state'>
+            <div class='checkbox__control'>
+              <svg class='checkbox__icon'>
+                <use href="/assets/images/sprite.svg#check">
+                </use>
+              </svg>
+            </div>
+            <div class='checkbox__legend'>Default</div>
+          </div>
+
+        </label>
+
+        <div class='checkbox'>
+          <div class='checkbox__state'>
+            <div class='checkbox__control checkbox_disabled'>
+              <svg class='checkbox__icon'>
+                <use href="/assets/images/sprite.svg#check">
+                </use>
+              </svg>
+            </div>
+            <div class='checkbox__legend'>Disabled</div>
+          </div>
+        </div>
+        <label class='radio'>
+          <input type='radio' class='radio__input' name='name'>
+          <div class='radio__state'>
+            <div class='radio__control'>
+              <svg class='radio__icon' width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="18" height="18" rx="9" fill="#4263EB"/>
+              </svg>
+            </div>
+            <div class='radio__legend'>Default</div>
+          </div>
+        </label>
+
+        <label class='radio'>
+          <input disabled type='radio' class='radio__input' name='name'>
+          <div class='radio__state'>
+            <div class='radio__control radio_disabled'>
+              <svg class='radio__icon' width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="18" height="18" rx="9" fill="#4263EB"/>
+              </svg>
+            </div>
+            <div class='radio__legend'>Disabled</div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class='footer template__footer'>
+  <div class='container'>
+    <div class='template__footer-text'>Reusable component library</div>
+  </div>
+</footer>
+</body>
+</html>

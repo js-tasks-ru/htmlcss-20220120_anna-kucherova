@@ -1,4 +1,6 @@
 .card {
+    display: flex;
+    flex-direction: column;
     flex-basis: 350px;
     height: 367px;
     padding: 30px 25px;
@@ -9,14 +11,19 @@
 }
 
 .card__body {
-
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card__footer {
+    flex: 0 1 auto;
     padding-top: 24px;
 }
 
 .card__title {
+    margin: 0;
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -26,6 +33,15 @@
     color: var(--black);
 }
 
+.card__subtitle {
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var( --grey-4);
+
+}
 
 
 @media (max-width: 991px) {
@@ -38,6 +54,9 @@
     }
     .card__title {
         font-size: 16px;
+    }
+    .card__subtitle {
+        display: none;
     }
 }
 

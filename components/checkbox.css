@@ -6,11 +6,6 @@
 .checkbox__input {
     position: absolute;
     left: -9999px;
-    /*width: 0;*/
-    /*height: 0;*/
-    /*outline: none;*/
-    /*visibility: hidden;*/
-    /*clip: rect(0 0 0 0);*/
 }
 
 .checkbox__state {
