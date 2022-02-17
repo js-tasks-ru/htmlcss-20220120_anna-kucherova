@@ -1,5 +1,5 @@
 .header {
-    padding: 96px 0 0;
+    padding: 25px 0 0;
     background-color: var(--white);
 }
 
@@ -9,7 +9,7 @@
     font-size: 50px;
     line-height: 64px;
     color: var(--black);
-    margin: 0;
+    margin: 40px 0;
 
 }
 

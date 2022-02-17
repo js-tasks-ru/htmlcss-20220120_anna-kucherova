@@ -22,70 +22,233 @@
             <h1 class='header__title'>
                 Reusable component library
             </h1>
-            <div class='tabs'>
-                <input id='#all-tab' type='radio'>
-                <input id='#elements-tab' type='radio'>
-                <input id='#containers-tab' type='radio' >
-                <input id='#templates-tab' type='radio'>
-                <div class='tabs__scroller'>
-                    <label class='tabs__title' for='#all-tab'>All components</label>
-                    <label class='tabs__title' for='#elements-tab'>Elements</label>
-                    <label class='tabs__title' for='#containers-tab'>Containers</label>
-                    <label class='tabs__title' for='#templates-tab'>Templates</label>
-                </div>
-            </div>
         </div>
     </header>
     <main class='content-section'>
-        <div class='container'>
-            <div class='preview all-tab'>
-                <div class='card'>
-                    <div class='card__body'></div>
-                    <div class='card__footer'>
-                        <h5 class='card__title'>Title</h5>
-                        <div class='card__subtitle'></div>
-                    </div>
+
+        <div class='tabs'>
+            <input id='all-tab' type='radio' name='tabs' checked>
+            <input id='elements-tab' type='radio' name='tabs'>
+            <input id='containers-tab' type='radio' name='tabs'>
+            <input id='templates-tab' type='radio' name='tabs'>
+            <nav class='tabs__nav'>
+                <div class='container'>
+                    <ul class='tabs__menu'>
+                            <li><label class='tabs__title' for='all-tab'>All components</label>
+                            </li>
+                            <li><label class='tabs__title' for='elements-tab'>Elements</label>
+                            </li>
+                            <li><label class='tabs__title' for='containers-tab'>Containers</label>
+                            </li>
+                            <li><label class='tabs__title' for='templates-tab'>Templates</label>
+                            </li>
+                        </ul>
                 </div>
-                <div class='card'>
-                    <div class='card__body'></div>
-                    <div class='card__footer'>
-                        <h5 class='card__title'>Title</h5>
-                        <div class='card__subtitle'></div>
+            </nav>
+            <div class='tabs__divider'></div>
+
+            <div class='tabs__content tabs__content-all'>
+                <div class='container'>
+                    <div class='preview'>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
-                <div class='card'>
-                    <div class='card__body'></div>
-                    <div class='card__footer'>
-                        <h5 class='card__title'>Title</h5>
-                        <div class='card__subtitle'></div>
-                    </div>
-                </div>
-                <div class='card'>
-                    <div class='card__body'></div>
-                    <div class='card__footer'>
-                        <h5 class='card__title'>Title</h5>
-                        <div class='card__subtitle'></div>
-                    </div>
-                </div>
-                <div class='card'>
-                    <div class='card__body'></div>
-                    <div class='card__footer'>
-                        <h5 class='card__title'>Title</h5>
-                        <div class='card__subtitle'></div>
-                    </div>
-                </div>
-                <div class='card'>
-                    <div class='card__body'></div>
-                    <div class='card__footer'>
-                        <h5 class='card__title'>Title</h5>
-                        <div class='card__subtitle'></div>
-                    </div>
-                </div>
+
             </div>
-            <div class='preview elements-tab'>
-                Elements tab
+            <div class='tabs__content tabs__content-elements'>
+                <div class='container'>
+                    <div class='preview'>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class='tabs__content tabs__content-containers'>
+                <div class='container'>
+                    <div class='preview'>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class='tabs__content tabs__content-templates'>
+                <div class='container'>
+                    <div class='preview'>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <div class='card__body'></div>
+                            <div class='card__footer'>
+                                <h5 class='card__title'>Title</h5>
+                                <div class='card__subtitle'></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </div>
+
     </main>
     <footer class='footer'>
         <div class='container'>

@@ -1,37 +1,79 @@
 .tabs {
-
-
+    
 }
 
-.tabs__title {
+.tabs__nav {
+    background-color: var(--white);
+}
+
+.tabs__menu {
+    display: flex;
+    gap: 40px;
+    padding-bottom: 8px;
+}
+
+.tabs__nav label {
+    position: relative;
     font-family: Inter, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
+    color: var(--grey-3);
+    cursor: pointer;
+    border-bottom: 5px solid transparent;
+    transition: all 200ms ease;
+}
+
+.tabs__nav label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    top: 100%;
+    background-color: var(--black);
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out;
+}
+
+.tabs__divider {
+    height: 1px;
+    width: 100vw;
+    background-color: var(--grey-2);
+}
+
+.tabs input[type="radio"] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    outline: none;
+    visibility: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+.tabs .tabs__content {
+    display: none;
+}
+
+#all-tab:checked ~ .tabs__nav label[for='all-tab'],
+#containers-tab:checked ~ .tabs__nav label[for='containers-tab'],
+#elements-tab:checked ~ .tabs__nav label[for='elements-tab'],
+#templates-tab:checked ~ .tabs__nav label[for='templates-tab'] {
+    /*position: relative;*/
     color: var(--black);
 }
 
-input[id*='tab']:checked ~ .tabs__scroller .tabs__title,
-input[id^='tab']:checked ~ .tabs__scroller .tabs__title {
-    border-bottom: solid 5px var(--black);
+#all-tab:checked ~ .tabs__nav label[for='all-tab']:after,
+#containers-tab:checked ~ .tabs__nav label[for='containers-tab']:after,
+#elements-tab:checked ~ .tabs__nav label[for='elements-tab']:after,
+#templates-tab:checked ~ .tabs__nav label[for='templates-tab']:after {
+    transform: scaleX(1);
 }
 
-.tabs__scroller {
-    margin: 40px 0 8px 0;
-    display: flex;
-    gap: 40px;
-
-}
-
-.all-tab {
-
-}
-
-.elements-tab {
-
-}
-
-input[id='elements-tab']:checked  {
-
+#all-tab:checked ~ .tabs__content-all,
+#containers-tab:checked ~ .tabs__containers,
+#elements-tab:checked ~ .tabs__elements,
+#templates-tab:checked ~ .tabs__templates {
+   display: block;
 }
