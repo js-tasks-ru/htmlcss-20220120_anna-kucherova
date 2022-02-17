@@ -14,6 +14,41 @@
 <body class='page'>
 <header class='header template__header'>
   <div class='container'>
+    <div class='header__row'>
+      <div class='header__logo'>
+        <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect y="1" width="30" height="30" fill="#212429"/>
+          <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+          <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+        </svg>
+
+      </div>
+      <div class='header__toggle-menu'>
+        <svg class='header_icon-day'>
+          <use href="/assets/images/sprite.svg#sun">
+          </use>
+        </svg>
+
+          <label class='toggler toggler-menu-bar'>
+            <input class='toggler__input' type='checkbox' name='name'>
+            <div class='toggler__state'>
+              <div class='toggler__control'>
+                <svg class='toggler__icon' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="24" height="24" rx="12" fill=""/>
+                </svg>
+              </div>
+<!--              <div class='toggler__legend toggler__legend_off'>Off</div>-->
+<!--              <div class='toggler__legend toggler__legend_on'>On</div>-->
+            </div>
+          </label>
+
+        <svg class='header_icon-night'>
+          <use href="/assets/images/sprite.svg#moon">
+          </use>
+        </svg>
+      </div>
+    </div>
+
   </div>
 </header>
 <main class='content-section'>
