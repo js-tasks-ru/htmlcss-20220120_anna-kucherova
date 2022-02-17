@@ -10,6 +10,7 @@
     display: flex;
     gap: 40px;
     padding-bottom: 8px;
+    overflow-x: scroll;
 }
 
 .tabs__nav label {
@@ -72,8 +73,15 @@
 }
 
 #all-tab:checked ~ .tabs__content-all,
-#containers-tab:checked ~ .tabs__containers,
-#elements-tab:checked ~ .tabs__elements,
-#templates-tab:checked ~ .tabs__templates {
+#containers-tab:checked ~ .tabs__content-containers,
+#elements-tab:checked ~ .tabs__content-elements,
+#templates-tab:checked ~ .tabs__content-templates {
    display: block;
+}
+
+.tabs__accordion-title, .tabs__input-title {
+    text-transform: uppercase;
+    color: var(--grey-3);
+    font-size: 28px;
+    font-family: Inter, sans-serif;
 }
