@@ -79,6 +79,89 @@
             </svg>
           </div>
         </div>
+        <div class='template__tabs'>
+          <input id='html-tab' type='radio' name='temp-tabs' checked>
+          <input id='css-tab' type='radio' name='temp-tabs'>
+          <nav class='template__tabs-nav'>
+            <ul class='template__tabs'>
+              <li><label class='template__tabs-title' for='html-tab'>HTML</label></li>
+              <li><label class='template__tabs-title' for='css-tab'>CSS</label></li>
+            </ul>
+          </nav>
+          <div class='tabs__divider'></div>
+          <div class='template__tabs-content template__tabs_html'>
+            <figure>
+              <pre>
+                <code>
+<!--                  '<div class='tooltip card__tooltip'>-->
+<!--          <div class='tooltip__bubble'>Helper Text</div>-->
+<!--          <div class='tooltip__icon'>-->
+<!--            <svg class='tooltip__question'>-->
+<!--              <use href="../assets/images/sprite.svg#question">-->
+<!--              </use>-->
+<!--            </svg>-->
+<!--          </div>-->
+<!--        </div>'-->
+                </code>
+              </pre>
+            </figure>
+          </div>
+          <div class='template__tabs-content template__tabs_css'>
+            <figure>
+              <pre>
+                <code>
+                  '.tooltip {
+              display: inline-flex;
+              position: relative;
+              cursor: pointer;
+              font-family: Inter, sans-serif;
+              }
+
+              .tooltip_small .tooltip__bubble {
+              display: block;
+              }
+
+              .tooltip:hover > .tooltip__bubble {
+              display: block;
+              }
+
+              .tooltip__question {
+              width: 24px;
+              height: 24px;
+              }
+
+              .tooltip__bubble {
+              position: absolute;
+              bottom: calc(100% + 8px);
+              right: 50%;
+              transform: translateX(50%);
+              padding: 13px 21px 8px 21px;
+              background: var(--blue-2);
+              box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
+              border-radius: 10px;
+              font-weight: normal;
+              font-size: 16px;
+              color: var(--grey-2);
+              white-space: nowrap;
+              display: none;
+              }
+
+              .tooltip__bubble:after {
+              content: "";
+              top: 100%;
+              right: 50%;
+              transform: translateX(50%);
+              position: absolute;
+              border: 8px solid transparent;
+              border-top: 8px solid var(--blue-2);
+              }'
+                </code>
+              </pre>
+            </figure>
+
+
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -45,6 +45,8 @@
     height: 82px;
 }
 
+
+
 @media (max-width: 991px) {
     .content-section {
         background-color: var(--white);
