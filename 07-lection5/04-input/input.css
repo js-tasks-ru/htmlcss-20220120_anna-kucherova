@@ -1,0 +1,72 @@
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input__item {
+    position: relative;
+}
+
+.input__label {
+    margin-bottom: 5px;
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+}
+
+.input__form {
+    padding-left: 24px;
+    width: 350px;
+    height: 56px;
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.input__form::placeholder {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--grey-2)
+}
+
+.input__form:focus {
+    border: 1px solid var(--blue-2);
+}
+
+.input_success .input__form::placeholder {
+    color: var(--grey-4)
+}
+
+.input__form_success-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 24px;
+    height: 24px;
+    fill: var(--blue-1);
+}
+
+.input__form_invalid-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 24px;
+    height: 24px;
+    fill: var(--error);
+}
+
+.input_invalid .input__form {
+    border-color: var(--error);
+}
+
+
+.input_invalid .input__form::placeholder {
+    color: var(--grey-4)
+}

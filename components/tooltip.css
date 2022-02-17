@@ -5,6 +5,10 @@
     font-family: Inter, sans-serif;
 }
 
+.tooltip_small .tooltip__bubble {
+    display: block;
+}
+
 .tooltip:hover > .tooltip__bubble {
     display: block;
 }

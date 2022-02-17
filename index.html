@@ -11,7 +11,7 @@
     <body class='page'>
     <header class='header'>
         <div class='container'>
-            <div class='logo'>
+            <div class='header__logo'>
                 <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="1" width="30" height="30" fill="#212429"/>
                     <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
@@ -51,45 +51,219 @@
                 <div class='container'>
                     <div class='preview'>
                         <div class='card'>
-                            <div class='card__body'></div>
+                            <div class='card__body'>
+                                <div class='tooltip tooltip_small'>
+                                    <div class='tooltip__bubble'>Helper Text</div>
+                                    <div class='tooltip__icon'>
+                                        <svg class='tooltip__question'>
+                                            <use href="../assets/images/sprite.svg#question">
+                                            </use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
                             <div class='card__footer'>
-                                <h5 class='card__title'>Title</h5>
-                                <div class='card__subtitle'></div>
+                                <h5 class='card__title'>Tooltip</h5>
+                                <div class='card__subtitle'>Container</div>
                             </div>
                         </div>
                         <div class='card'>
-                            <div class='card__body'></div>
+                            <div class='card__body'>
+                                <div class='form-elements'>
+                                    <div class='form-elements__checkbox'>
+                                        <label class='checkbox'>
+                                            <input type='checkbox' class='checkbox__input' name='name' checked disabled>
+                                            <div class='checkbox__state'>
+                                                <div class='checkbox__control'>
+                                                    <svg class='checkbox__icon'>
+                                                        <use href="/assets/images/sprite.svg#check">
+                                                        </use>
+                                                    </svg>
+                                                </div>
+                                                <div class='checkbox__legend'>Default</div>
+                                            </div>
+
+                                        </label>
+                                        <div class='checkbox'>
+                                            <div class='checkbox__state'>
+                                                <div class='checkbox__control checkbox_disabled'>
+                                                    <svg class='checkbox__icon'>
+                                                        <use href="/assets/images/sprite.svg#check">
+                                                        </use>
+                                                    </svg>
+                                                </div>
+                                                <div class='checkbox__legend'>Disabled</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='form-elements__radio'>
+                                        <label class='radio'>
+                                            <input type='radio' class='radio__input' name='name' checked disabled>
+                                            <div class='radio__state'>
+                                                <div class='radio__control'>
+                                                    <svg class='radio__icon' width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="18" height="18" rx="9" fill="#4263EB"/>
+                                                    </svg>
+                                                </div>
+                                                <div class='radio__legend'>Default</div>
+                                            </div>
+                                        </label>
+                                        <label class='radio'>
+                                            <input disabled type='radio' class='radio__input' name='name'>
+                                            <div class='radio__state'>
+                                                <div class='radio__control radio_disabled'>
+                                                    <svg class='radio__icon' width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="18" height="18" rx="9" fill="#4263EB"/>
+                                                    </svg>
+                                                </div>
+                                                <div class='radio__legend'>Disabled</div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                             <div class='card__footer'>
-                                <h5 class='card__title'>Title</h5>
-                                <div class='card__subtitle'></div>
+                                <h5 class='card__title'>Custom form elements</h5>
+                                <div class='card__subtitle'>Element</div>
                             </div>
                         </div>
                         <div class='card'>
-                            <div class='card__body'></div>
+                            <div class='card__body'>
+                                <div class='calendar calendar_small'>
+                                    <div class='calendar__title'>October 2020</div>
+                                    <div class='calendar__wrapper'>
+                                        <div class='calendar__inner'>
+                                            <span class='calendar__item calendar__item_week-day'>Mon</span>
+                                            <span class='calendar__item calendar__item_week-day'>Tue</span>
+                                            <span class='calendar__item calendar__item_week-day'>Wed</span>
+                                            <span class='calendar__item calendar__item_week-day'>Thu</span>
+                                            <span class='calendar__item calendar__item_week-day'>Fri</span>
+                                            <span class='calendar__item calendar__item_week-day'>Sat</span>
+                                            <span class='calendar__item calendar__item_week-day'>Sun</span>
+                                            <span class='calendar__item'></span>
+                                            <span class='calendar__item'></span>
+                                            <span class='calendar__item'></span>
+                                            <span class='calendar__item'></span>
+                                            <span class='calendar__item'></span>
+                                            <span class='calendar__item'>1</span>
+                                            <span class='calendar__item'>2</span>
+                                            <span class='calendar__item'>3</span>
+                                            <span class='calendar__item'>4</span>
+                                            <span class='calendar__item'>5</span>
+                                            <span class='calendar__item'>6</span>
+                                            <span class='calendar__item'>7</span>
+                                            <span class='calendar__item'>8</span>
+                                            <span class='calendar__item'>9</span>
+                                            <span class='calendar__item'>10</span>
+                                            <span class='calendar__item'>11</span>
+                                            <span class='calendar__item'>12</span>
+                                            <span class='calendar__item'>13</span>
+                                            <span class='calendar__item'>14</span>
+                                            <span class='calendar__item'>15</span>
+                                            <span class='calendar__item'>16</span>
+                                            <span class='calendar__item'>17</span>
+                                            <span class='calendar__item calendar__item_active'>18</span>
+                                            <span class='calendar__item calendar__item_between-active'>19</span>
+                                            <span class='calendar__item calendar__item_between-active'>20</span>
+                                            <span class='calendar__item calendar__item_between-active'>21</span>
+                                            <span class='calendar__item calendar__item_between-active'>22</span>
+                                            <span class='calendar__item calendar__item_active'>23</span>
+                                            <span class='calendar__item'>24</span>
+                                            <span class='calendar__item'>25</span>
+                                            <span class='calendar__item'>26</span>
+                                            <span class='calendar__item'>27</span>
+                                            <span class='calendar__item'>28</span>
+                                            <span class='calendar__item'>29</span>
+                                            <span class='calendar__item'>30</span>
+                                            <span class='calendar__item'>31</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class='card__footer'>
-                                <h5 class='card__title'>Title</h5>
-                                <div class='card__subtitle'></div>
+                                <h5 class='card__title'>Calendar</h5>
+                                <div class='card__subtitle'>Container</div>
                             </div>
                         </div>
                         <div class='card'>
-                            <div class='card__body'></div>
+                            <div class='card__body'>
+                                <div id='modal' class='modal modal_small'>
+                                    <div class='modal__content'>
+                                        <div class='modal__window'>
+                                            <button id='modal-close' class='modal__exit'>
+                                                <svg class='modal__cross'>
+                                                    <use href="../assets/images/sprite.svg#cross">
+                                                    </use>
+                                                </svg>
+                                            </button>
+                                            <div class='modal__title'>Modal title</div>
+                                            <div class='modal__body'>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class='card__footer'>
-                                <h5 class='card__title'>Title</h5>
-                                <div class='card__subtitle'></div>
+                                <h5 class='card__title'>Modal dialog</h5>
+                                <div class='card__subtitle'>Container</div>
                             </div>
                         </div>
                         <div class='card'>
-                            <div class='card__body'></div>
+                            <div class='card__body'>
+                                <div class='histogram histogram_small'>
+                                    <div class='histogram__header'>
+                                        <div class='histogram__title'>Total orders</div>
+                                        <div class='histogram__link'>View all</div>
+                                    </div>
+                                    <div class='histogram__count'>50254</div>
+                                    <div class='histogram__image'>
+                                        <div class='histogram__box' style='height: 50px'></div>
+                                        <div class='histogram__box' style='height: 35px'></div>
+                                        <div class='histogram__box' style='height: 22px'></div>
+                                        <div class='histogram__box' style='height: 39px'></div>
+                                        <div class='histogram__box' style='height: 22px'></div>
+                                        <div class='histogram__box' style='height: 30px'></div>
+                                        <div class='histogram__box' style='height: 39px'></div>
+                                        <div class='histogram__box' style='height: 50px'></div>
+                                        <div class='histogram__box' style='height: 11px'></div>
+                                        <div class='histogram__box' style='height: 22px'></div>
+                                        <div class='histogram__box' style='height: 30px'></div>
+                                        <div class='histogram__box' style='height: 35px'></div>
+                                        <div class='histogram__box' style='height: 11px'></div>
+                                        <div class='histogram__box' style='height: 50px'></div>
+                                        <div class='histogram__box' style='height: 11px'></div>
+                                        <div class='histogram__box' style='height: 39px'></div>
+                                        <div class='histogram__box' style='height: 30px'></div>
+                                        <div class='histogram__box' style='height: 22px'></div>
+                                        <div class='histogram__box' style='height: 35px'></div>
+                                        <div class='histogram__box' style='height: 30px'></div>
+                                        <div class='histogram__box' style='height: 11px'></div>
+                                        <div class='histogram__box' style='height: 39px'></div>
+                                        <div class='histogram__box' style='height: 35px'></div>
+                                        <div class='histogram__box' style='height: 45px'></div>
+                                        <div class='histogram__box' style='height: 30px'></div>
+                                        <div class='histogram__box' style='height: 11px'></div>
+                                        <div class='histogram__box' style='height: 30px'></div>
+                                        <div class='histogram__box' style='height: 11px'></div>
+                                        <div class='histogram__box' style='height: 35px'></div>
+                                        <div class='histogram__box' style='height: 17px'></div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class='card__footer'>
-                                <h5 class='card__title'>Title</h5>
-                                <div class='card__subtitle'></div>
+                                <h5 class='card__title'>Histogram</h5>
+                                <div class='card__subtitle'>Element</div>
                             </div>
                         </div>
                         <div class='card'>
-                            <div class='card__body'></div>
+                            <div class='card__body'>
+                                <div class='avatar'>
+                                    <img src='/assets/images/avatar-200.jpg' alt='avatar' class='avatar__img'>
+                                </div>
+                            </div>
                             <div class='card__footer'>
-                                <h5 class='card__title'>Title</h5>
-                                <div class='card__subtitle'></div>
+                                <h5 class='card__title'>Avatar</h5>
+                                <div class='card__subtitle'>Element</div>
                             </div>
                         </div>
                     </div>
@@ -248,7 +422,6 @@
 
             </div>
         </div>
-
     </main>
     <footer class='footer'>
         <div class='container'>

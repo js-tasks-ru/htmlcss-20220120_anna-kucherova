@@ -9,6 +9,26 @@
     display: none;
 }
 
+.modal_small {
+    position: relative;
+    display: block;
+}
+
+.modal_small .modal__window {
+    padding: 12px 17px;
+    max-width: 250px;
+}
+
+.modal_small .modal__title {
+    font-size: 13px;
+}
+
+.modal_small .modal__body {
+    font-size: 9px;
+    line-height: 15px;
+    text-overflow: ellipsis;
+}
+
 .modal__window {
     box-sizing: border-box;
     position: relative;

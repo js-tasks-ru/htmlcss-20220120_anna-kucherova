@@ -5,3 +5,14 @@
     gap: 30px;
     padding: 67px 0 92px 0;
 }
+
+.preview__link {
+    flex-basis: 350px;
+    text-decoration: none;
+}
+
+@media (max-width: 991px) {
+    .preview__link {
+        flex-basis: 450px;
+    }
+}
