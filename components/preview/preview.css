@@ -11,6 +11,10 @@
     text-decoration: none;
 }
 
+.preview_template {
+    flex-direction: column;
+}
+
 @media (max-width: 991px) {
     .preview__link {
         flex-basis: 450px;
