@@ -21,32 +21,8 @@
           <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
           <path d="M78 0L110 32H78V0Z" fill="#212429"/>
         </svg>
-
       </div>
-      <div class='header__toggle-menu'>
-        <svg class='header_icon-day'>
-          <use href="/assets/images/sprite.svg#sun">
-          </use>
-        </svg>
 
-          <label class='toggler toggler-menu-bar'>
-            <input class='toggler__input' type='checkbox' name='name'>
-            <div class='toggler__state'>
-              <div class='toggler__control'>
-                <svg class='toggler__icon' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="24" height="24" rx="12" fill=""/>
-                </svg>
-              </div>
-<!--              <div class='toggler__legend toggler__legend_off'>Off</div>-->
-<!--              <div class='toggler__legend toggler__legend_on'>On</div>-->
-            </div>
-          </label>
-
-        <svg class='header_icon-night'>
-          <use href="/assets/images/sprite.svg#moon">
-          </use>
-        </svg>
-      </div>
     </div>
 
   </div>
@@ -80,12 +56,12 @@
           </div>
         </div>
         <div class='template__tabs'>
-          <input id='html-tab' type='radio' name='temp-tabs' checked>
-          <input id='css-tab' type='radio' name='temp-tabs'>
+          <input id='html-tab' class='template__tabs-control' type='radio' name='temp-tabs' checked>
+          <input id='css-tab' class='template__tabs-control' type='radio' name='temp-tabs'>
           <nav class='template__tabs-nav'>
             <ul class='template__tabs-menu'>
-              <li><label class='template__tabs-title' for='html-tab'>HTML</label></li>
-              <li><label class='template__tabs-title' for='css-tab'>CSS</label></li>
+              <li><label class='template__tabs-item' for='html-tab'>HTML</label></li>
+              <li><label class='template__tabs-item' for='css-tab'>CSS</label></li>
             </ul>
           </nav>
           <div class='template__tabs-divider'></div>
@@ -93,15 +69,15 @@
             <figure>
               <pre>
                 <code>
-                  <div class='tooltip card__tooltip'>
-          <div class='tooltip__bubble'>Helper Text</div>
-          <div class='tooltip__icon'>
-            <svg class='tooltip__question'>
-              <use href="../assets/images/sprite.svg#question">
-              </use>
-            </svg>
-          </div>
-        </div>
+                  &lt;div class='tooltip card__tooltip'&gt;
+          &lt;div class='tooltip__bubble'&gt;Helper Text&lt;/div&gt;
+          &lt;div class='tooltip__icon'&gt;
+            &lt;svg class='tooltip__question'&gt;
+              &lt;use href="../assets/images/sprite.svg#question"&gt;
+              &lt;/use&gt;
+            &lt;/svg&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
                 </code>
               </pre>
             </figure>
@@ -110,7 +86,7 @@
             <figure>
               <pre>
                 <code>
-                  '.tooltip {
+                  .tooltip {
               display: inline-flex;
               position: relative;
               cursor: pointer;
@@ -154,7 +130,7 @@
               position: absolute;
               border: 8px solid transparent;
               border-top: 8px solid var(--blue-2);
-              }'
+              }
                 </code>
               </pre>
             </figure>

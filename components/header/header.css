@@ -19,21 +19,6 @@
     justify-content: space-between;
 }
 
-.header__toggle-menu {
-    display: flex;
-    gap: 15px;
-}
-
-.header_toggler-block {
-
-}
-
-.header_icon-day,
-.header_icon-night{
-    width: 22px;
-    height: 22px;
-}
-
 .header__logo {
     margin-bottom: 40px;
 }
