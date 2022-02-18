@@ -12,7 +12,7 @@
   </style>
 </head>
 <body class='page'>
-<header class='header template__header'>
+<header class='header header_bg-grey'>
   <div class='container'>
     <div class='header__row'>
       <div class='header__logo'>
@@ -55,20 +55,20 @@
             </svg>
           </div>
         </div>
-        <div class='template__tabs'>
-          <input id='html-tab' class='template__tabs-control' type='radio' name='temp-tabs' checked>
-          <input id='css-tab' class='template__tabs-control' type='radio' name='temp-tabs'>
-          <nav class='template__tabs-nav'>
-            <ul class='template__tabs-menu'>
-              <li><label class='template__tabs-item' for='html-tab'>HTML</label></li>
-              <li><label class='template__tabs-item' for='css-tab'>CSS</label></li>
+        <div class='tabs'>
+          <input id='html-tab' class='tabs__control' type='radio' name='temp-tabs' checked>
+          <input id='css-tab' class='tabs__control' type='radio' name='temp-tabs'>
+          <nav class='tabs__nav'>
+            <ul class='tabs__menu'>
+              <li><label class='tabs__nav_item' for='html-tab'>HTML</label></li>
+              <li><label class='tabs__nav_item' for='css-tab'>CSS</label></li>
             </ul>
           </nav>
           <div class='template__tabs-divider'></div>
-          <div class='template__tabs-content template__tabs_html'>
-            <figure>
-              <pre>
-                <code>
+          <div class='tabs__content tabs__content-html'>
+            <figure class='tabs__figure'>
+              <pre class='tabs__pre'>
+                <code class='tabs__code'>
                   &lt;div class='tooltip card__tooltip'&gt;
           &lt;div class='tooltip__bubble'&gt;Helper Text&lt;/div&gt;
           &lt;div class='tooltip__icon'&gt;
@@ -82,10 +82,10 @@
               </pre>
             </figure>
           </div>
-          <div class='template__tabs-content template__tabs_css'>
-            <figure>
-              <pre>
-                <code>
+          <div class='tabs__content tabs__content-css'>
+            <figure class='tabs__figure'>
+              <pre class='tabs__pre'>
+                <code class='tabs__code'>
                   .tooltip {
               display: inline-flex;
               position: relative;
