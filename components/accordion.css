@@ -1,5 +1,7 @@
 /* Стилизация аккордеона */
-
+.accordion_template {
+    max-width: 900px;
+}
 .accordion__item {
     position: relative;
     padding: 24px 48px 24px 32px;
@@ -53,4 +55,8 @@
 
 .accordion__arrow_transition {
     transition: all 500ms ease-in-out;
+}
+
+.accordion__item-wide {
+    width: 100%;
 }
