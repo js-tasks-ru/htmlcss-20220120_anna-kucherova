@@ -79,6 +79,19 @@
    display: block;
 }
 
+.tabs__figure {
+    margin: 0;
+}
+.tabs__pre {
+    overflow-x: auto;
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+.tabs__code {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
 .tabs__accordion-title, .tabs__input-title {
     text-transform: uppercase;
     color: var(--grey-3);

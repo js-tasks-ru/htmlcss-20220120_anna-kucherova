@@ -12,8 +12,19 @@
   </style>
 </head>
 <body class='page'>
-<header class='header template__header'>
+<header class='header header_bg-grey'>
   <div class='container'>
+    <div class='header__row'>
+      <div class='header__logo'>
+        <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect y="1" width="30" height="30" fill="#212429"/>
+          <rect x="38" width="32" height="32" rx="16" fill="#212429"/>
+          <path d="M78 0L110 32H78V0Z" fill="#212429"/>
+        </svg>
+      </div>
+
+    </div>
+
   </div>
 </header>
 <main class='content-section'>
@@ -42,6 +53,89 @@
               <use href="../assets/images/sprite.svg#question">
               </use>
             </svg>
+          </div>
+        </div>
+        <div class='tabs'>
+          <input id='html-tab' class='tabs__control' type='radio' name='temp-tabs' checked>
+          <input id='css-tab' class='tabs__control' type='radio' name='temp-tabs'>
+          <nav class='tabs__nav'>
+            <ul class='tabs__menu'>
+              <li><label class='tabs__nav_item' for='html-tab'>HTML</label></li>
+              <li><label class='tabs__nav_item' for='css-tab'>CSS</label></li>
+            </ul>
+          </nav>
+          <div class='template__tabs-divider'></div>
+          <div class='tabs__content tabs__content-html'>
+            <figure class='tabs__figure'>
+              <pre class='tabs__pre'>
+                <code class='tabs__code'>
+                  &lt;div class='tooltip card__tooltip'&gt;
+          &lt;div class='tooltip__bubble'&gt;Helper Text&lt;/div&gt;
+          &lt;div class='tooltip__icon'&gt;
+            &lt;svg class='tooltip__question'&gt;
+              &lt;use href="../assets/images/sprite.svg#question"&gt;
+              &lt;/use&gt;
+            &lt;/svg&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+                </code>
+              </pre>
+            </figure>
+          </div>
+          <div class='tabs__content tabs__content-css'>
+            <figure class='tabs__figure'>
+              <pre class='tabs__pre'>
+                <code class='tabs__code'>
+                  .tooltip {
+              display: inline-flex;
+              position: relative;
+              cursor: pointer;
+              font-family: Inter, sans-serif;
+              }
+
+              .tooltip_small .tooltip__bubble {
+              display: block;
+              }
+
+              .tooltip:hover > .tooltip__bubble {
+              display: block;
+              }
+
+              .tooltip__question {
+              width: 24px;
+              height: 24px;
+              }
+
+              .tooltip__bubble {
+              position: absolute;
+              bottom: calc(100% + 8px);
+              right: 50%;
+              transform: translateX(50%);
+              padding: 13px 21px 8px 21px;
+              background: var(--blue-2);
+              box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
+              border-radius: 10px;
+              font-weight: normal;
+              font-size: 16px;
+              color: var(--grey-2);
+              white-space: nowrap;
+              display: none;
+              }
+
+              .tooltip__bubble:after {
+              content: "";
+              top: 100%;
+              right: 50%;
+              transform: translateX(50%);
+              position: absolute;
+              border: 8px solid transparent;
+              border-top: 8px solid var(--blue-2);
+              }
+                </code>
+              </pre>
+            </figure>
+
+
           </div>
         </div>
       </div>

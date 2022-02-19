@@ -1,5 +1,5 @@
 .template__inner {
-    padding-top: 36px;
+
     font-family: Inter, sans-serif;
     display: grid;
     grid-template-columns: auto 1fr;
@@ -21,6 +21,76 @@
     color: var(--grey-4);
 }
 
+/*.template__tabs {*/
+/*    !*position: relative;*!*/
+/*}*/
+
+/*.template__tabs-control {*/
+/*    position: absolute;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    outline: none;*/
+/*    visibility: hidden;*/
+/*    clip: rect(0, 0, 0, 0);*/
+/*}*/
+
+/*.template__tabs-menu {*/
+/*    display: flex;*/
+/*    gap: 40px;*/
+/*}*/
+
+/*.template__tabs .template__tabs-content {*/
+/*    display: none;*/
+/*}*/
+
+/*.template__tabs-nav .template__tabs-item {*/
+/*    position: relative;*/
+/*    font-family: Inter, sans-serif;*/
+/*    font-style: normal;*/
+/*    font-weight: normal;*/
+/*    font-size: 16px;*/
+/*    line-height: 24px;*/
+/*    color: var(--grey-3);*/
+/*    cursor: pointer;*/
+/*    border-bottom: 5px solid transparent;*/
+/*    transition: all 200ms ease;*/
+/*}*/
+
+/*.template__tabs-nav .template__tabs-item:after {*/
+/*    content: '';*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    height: 5px;*/
+/*    width: 100%;*/
+/*    top: 100%;*/
+/*    background-color: var(--black);*/
+/*    transform: scaleX(0);*/
+/*    transition: transform 250ms ease-in-out;*/
+/*}*/
+
+.template__tabs-divider {
+    height: 1px;
+    width: 100%;
+    background-color: var(--grey-2);
+
+}
+
+#html-tab:checked ~ .tabs__nav .tabs__nav_item[for='html-tab'],
+#css-tab:checked ~ .tabs__nav .tabs__nav_item[for='css-tab'] {
+    color: var(--black);
+}
+
+#html-tab:checked ~ .tabs__nav .tabs__nav_item[for='html-tab']:after,
+#css-tab:checked ~ .tabs__nav .tabs__nav_item[for='css-tab']:after {
+    transform: scaleX(1);
+}
+
+#html-tab:checked ~ .tabs__content-html,
+#css-tab:checked ~ .tabs__content-css {
+    display: block;
+}
+
+
 .template__footer {
     box-sizing: border-box;
     font-family: Inter, sans-serif;
@@ -39,11 +109,6 @@
     color: var(--grey-3);
 }
 
-.template__header {
-    padding-bottom: 0;
-    background-color: var(--grey-5);
-    height: 82px;
-}
 
 @media (max-width: 991px) {
     .content-section {
