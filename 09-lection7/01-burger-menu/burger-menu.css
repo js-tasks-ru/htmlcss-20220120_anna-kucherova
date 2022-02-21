@@ -13,15 +13,13 @@
 }
 
 .burger-menu-open, .burger-menu-close {
+    display: block;
+    padding: 3px;
     border-radius: 50%;
     border: none;
     background-color: var(--grey-2);
-    padding: 0;
     width: 30px;
     height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .open-icon, .close-icon {
