@@ -1,6 +1,7 @@
 .sidebar {
     font-family: Inter, sans-serif;
 }
+
 .sidebar__title {
     margin: 0 0 16px 0;
     font-weight: normal;
@@ -16,8 +17,9 @@
 }
 
 .sidebar__menu-item {
+    font-size: 16px;
     list-style: none;
-    padding-bottom: 4px;
+    padding-bottom: 16px;
 }
 
 .sidebar__menu-item:last-child {
@@ -33,7 +35,7 @@
     line-height: 22px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 768px) {
     .sidebar {
         display: none;
     }

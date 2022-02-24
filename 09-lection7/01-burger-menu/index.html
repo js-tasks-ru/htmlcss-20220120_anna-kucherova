@@ -2,11 +2,37 @@
 <!-- Страница бургер-меню -->
 <html lang="ru">
     <head>
+        <meta charset='UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./burger-menu.css">
         <script defer src="./burger-menu.js"></script>
     </head>
     <body>
-
+        <button id='burger-menu-open' class='button button_primary'>
+            Open
+        </button>
+        <div id='burger-menu' class='burger-menu'>
+            <button id='burger-menu-close' class='burger-menu__close'>
+                <svg>
+                <use href="/assets/images/sprite.svg#cross">
+                </use>
+                </svg>
+            </button>
+            <div class='sidebar'>
+                <h4 class='sidebar__title'>Components</h4>
+                <nav>
+                    <ul class='sidebar__menu'>
+                        <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Modal</a></li>
+                        <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Tooltip</a></li>
+                        <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Avatar</a></li>
+                        <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Calendar</a></li>
+                        <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Histogram</a></li>
+                        <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Custom form elements</a></li>
+                        <li class='sidebar__menu-item'><a class='sidebar__link' href='#'>Main page</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </body>
 </html>
